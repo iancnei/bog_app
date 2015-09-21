@@ -40,7 +40,7 @@ class CreaturesController < ApplicationController
 		id = params[:id]
 		deleted_creature = Creature.find(id)
 		deleted_creature.destroy
-
+		redirect_to "/creatures"
 	end
 
 end
